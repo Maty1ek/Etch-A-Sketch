@@ -1,0 +1,19 @@
+
+  .main_paint {
+    width: 550px;
+    height: 550px;
+    /* border: 1px solid white; */
+    background-color: #fff;
+    position: absolute;
+    right: 35px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+  }
+  
+  .paintScuare {
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+    border: 1px solid black;
+  }
