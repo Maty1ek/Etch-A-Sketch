@@ -1,5 +1,6 @@
 @import url('reset.css');
 @import url('components/PaintingSquare.css');
+@import url('components/UserSide.css');
 
 @font-face {
   font-family: 'Quinty';
@@ -16,11 +17,11 @@ body {
   width: 100%;
   height: 100vh;
   color: #fff;
-  background-image: url("https://steamuserimages-a.akamaihd.net/ugc/930441829001688385/C5C95FB0A898646437F361003E6E61B5CA099358/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false");
+  background-image: url('https://wallpapers.com/images/featured/ultra-hd-wazf67lzyh5q7k32.jpg');
   background-size: 100%;
   animation: backgroundGradient 9s infinite;
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 50% 0%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,8 +33,7 @@ body {
   border: 2px solid #ffffff;
   border-radius: 50px;
   box-shadow: 0px 0px 20px 1px #fbf6f668;
-  background-color: rgba(227, 169, 252, 0.2);
-  backdrop-filter: blur(16px);
+  backdrop-filter: blur(8px);
   display: flex;
   align-items: center;
 }

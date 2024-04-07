@@ -1,7 +1,6 @@
 const mainPaint = document.querySelector('.main_paint')
 const elementWidth = mainPaint.offsetWidth
-const painSize = 15
-
+const painSize = 16
 
 let pixelSize = elementWidth / painSize
 

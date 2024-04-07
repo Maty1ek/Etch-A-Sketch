@@ -1,0 +1,125 @@
+.user_bar {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 40px;
+}
+
+.userTitle {
+    font-family: 'Quinty';
+    font-size: 120px;
+    margin: 0 auto;
+    color: #ff29fb;
+}
+
+.given_params {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+    height: 400px;
+    justify-content: space-between;
+}
+
+/* styles of buttons */
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 26px;
+    font-family: 'Lunasima';
+    color: rgb(255, 255, 255);
+    background-color: #fe54878b;
+    border: 2px solid #fe5487;
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px #ff578a, 0px 0px 15px #ff578a, 0px 0px 7px #ff5789c4 inset;
+}
+
+button:active {
+    transform: scale(1.015);
+    text-shadow: 0px 0px 1px #000000fa;
+    box-shadow: 0px 0px 10px #fe5487, 0px 0px 12px #df3467;
+    background-color: #fe5487;
+    transition: 0.001s;
+}
+
+.rainbow_btn {
+    background-color: #ff1ea1db;
+    border-color: #fff;
+}
+
+.rainbow_btn:hover {
+    text-shadow: 0px 0px 3px #fff;
+    box-shadow: 0px 0px 10px #fff, 0px 0px 15px #fff;
+}
+
+.rainbow_btn:active {
+    box-shadow: 0px 0px 10px #fff;
+    background-color: #fe5487;
+}
+
+/* styling range for changing pixel count */
+.pixel_count {
+    width: 200px;
+    height: 9px;
+    border-radius: 20px;
+    border: 1px solid rgb(83, 83, 83);
+    -webkit-appearance: none;
+    background-color: #ffbfd3;
+}
+
+.pixel_count::-webkit-slider-thumb {
+    width: 20px;
+    -webkit-appearance: none;
+    height: 20px;
+    border-radius: 100%;
+    cursor: pointer;
+    background: #ff1573;
+}
+
+.pixel_size_range {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.pixel_size_range>span {
+    position: absolute;
+    right: -45px;
+    font-family: 'Lunasima';
+    font-size: 20px;
+}
+
+/* Styling color palette */
+.color_input_con {
+    width: 200px;
+    height: 80px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 30px;
+}
+
+.color_palette {
+    background-color: transparent;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 300px;
+    height: 110px;
+    border: none;
+    overflow: hidden;
+}
+
+.color_palette::-webkit-color-swatch-wrapper {
+    -webkit-appearance: none;
+    padding: 0px;
+}

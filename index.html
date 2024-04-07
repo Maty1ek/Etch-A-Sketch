@@ -1,16 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/all.css">
     <title>Document</title>
 </head>
+
 <body>
     <div class="con">
-        <div class="main_paint" style="cursor: pointer;">
+        <div class="user_bar">
+            <h1 class="userTitle">Etch A Sketch</h1>
+            <div class="given_params">
+                <div class="color_input_con">
+                    <input type="color" class="color_palette" value="#ff52f9">
+                </div>
+                <div class="pixel_size_range">
+                    <input type="range" class="pixel_count" value="16" min="1" max="100">
+                    <span></span>
+                </div>
+                <button class="rainbow_btn">Rainbow</button>
+                <button>Eraser</button>
+                <button>Clear</button>
+            </div>
+        </div>
+
+        <div class="main_paint" style="cursor:crosshair;">
         </div>
     </div>
     <script src="index.js"></script>
 </body>
+
 </html>
