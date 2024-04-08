@@ -29,10 +29,29 @@ SquareSize.onchange = (e) => setSquareSize(e.target.value)
 SquareSize.onmousemove = (e) => squareSizeValue.innerHTML = e.target.value
 clearBtn.onclick = () => clearSquare()
 
+function modeChanger(mode, e) {
+    modeCondition = mode
+
+    rainbowMode.classList.remove('active')
+    colorMode.classList.remove('active')
+    eraserMode.classList.remove('active')
+
+    if (mode === 'rainbow') {
+        rainbowMode.classList.add('active')
+        console.log(mode);
+    } else if (mode === 'color') {
+        colorMode.classList.add('active')
+        console.log(mode);
+    } else if (mode === 'eraser') {
+        eraserMode.classList.add('active')
+        console.log(mode);
+    }
+}
+
 // Events for changing modes
-colorMode.onclick = () => modeCondition = 'color'
-eraserMode.onclick = () => modeCondition = 'eraser'
-rainbowMode.onclick = () => modeCondition = 'rainbow'
+colorMode.onclick = (e) => modeChanger('color')
+eraserMode.onclick = (e) => modeChanger('eraser');
+rainbowMode.onclick = (e) => modeChanger('rainbow');
 
 let mouseDown = 0
 document.body.onmousedown = () => (mouseDown = 1)
@@ -59,12 +78,12 @@ function changeColor(e) {
         } else if (modeCondition == 'eraser') {
             e.target.style.background = '#fff'
         } else if (modeCondition == 'rainbow') {
-            let firstValue = Math.floor(Math.random() * 255) 
-            let secondValue = Math.floor(Math.random() * 255) 
-            let thirdValue = Math.floor(Math.random() * 255) 
+            let firstValue = Math.floor(Math.random() * 255)
+            let secondValue = Math.floor(Math.random() * 255)
+            let thirdValue = Math.floor(Math.random() * 255)
             e.target.style.background = `rgb(${firstValue}, ${secondValue}, ${thirdValue})`
         }
-    } 
+    }
 
 }
 
