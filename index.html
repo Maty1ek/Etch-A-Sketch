@@ -14,15 +14,16 @@
             <h1 class="userTitle">Etch A Sketch</h1>
             <div class="given_params">
                 <div class="color_input_con">
-                    <input type="color" class="color_palette" value="#ff52f9">
+                    <input type="color" id="colorPalette" class="color_palette" value="">
                 </div>
                 <div class="pixel_size_range">
-                    <input type="range" class="pixel_count" value="16" min="1" max="100">
-                    <span></span>
+                    <input type="range" id="SquareSize" class="pixel_count" value="" min="1" max="100">
+                    <span id="squareSizeValue"></span>
                 </div>
-                <button class="rainbow_btn">Rainbow</button>
-                <button>Eraser</button>
-                <button>Clear</button>
+                <button id="rainbowMode" class="rainbow_btn">Rainbow</button>
+                <button id="colorMode">Color</button>
+                <button id="eraserMode">Eraser</button>
+                <button id="clearBtn">Clear</button>
             </div>
         </div>
 
